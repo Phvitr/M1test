@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function f3(arr1) {
+        let a = 0
+        for (let i = 0; i <arr1.length; i++) {
+            for (let j = i + 1; j <arr1.length; j++) {
+                if (arr1[i] < arr1[j]) {
+                    a = arr1[i];
+                    arr1[i] = arr1[j];
+                    arr1[j] = a;
+                }
+            }
+        }
+        document.write("The 3rd highest score is : " + arr1[2]);
+    }
+    f3([2,5,7,8,4,9]);
+
+
+</script>
+</body>
+</html>
